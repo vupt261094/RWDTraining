@@ -11,8 +11,17 @@
     margin-top: 20px;
   }
 }
-.page__title {
-  margin: 0;
+
+
+.main-panel{
+  padding-top: 50px;
+  .page__title {
+    // margin: 0;
+    font-size: convertFontSize(24px);
+  }
+  .sub-text{
+    font-size: convertFontSize(16px);
+  }
 }
 
 /*

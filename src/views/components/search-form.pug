@@ -1,0 +1,35 @@
+//- src/views/components/search-form.pug
+#searchForm.row
+    .search-form-content
+            .form-group
+                .col-xs
+                    h1 Find homes in United States on Airbnb
+                .col-xs
+                    p Discover entire homes and private rooms perfect for any trip.
+            .row.form-group
+                .col-sm
+                    label.control-label WHERE
+                    input.form-control(type='text', value='Anywhere')
+            .row.form-group
+                .col-sm-6
+                    label.control-label CHECK IN
+                    input.form-control(type='text', value='mm/dd/yyyy')
+                .col-sm-6
+                    label.control-label CHECK OUT
+                    input.form-control(type='text', value='mm/dd/yyyy')
+            .row.form-group
+                .col-sm-6
+                    label.control-label ADULTS
+                    select.form-control
+                        option(value='1') 1 adult
+                        option(value='2') 2 adults
+                        option(value='3') 3 adults
+                .col-sm-6
+                    label.control-label CHILDREN
+                    select.form-control
+                        option(value='1') 1 child
+                        option(value='2') 2 childs
+                        option(value='3') 3 childs
+            .form-group
+                .col-xs
+                    button.btn.btn-search.text-center.w-100 Search

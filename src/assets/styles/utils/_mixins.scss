@@ -14,3 +14,8 @@
   background-position: $position;
   background-size: $size;
 }
+
+@function convertFontSize($value)
+{
+    @return ($value/$pageFontSize + rem);
+}

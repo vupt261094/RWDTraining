@@ -10,9 +10,27 @@ block manifestBrowserconfigFiles
 block content
 
   //- Desktop page
-  section.page.home__page
-    h1.page__title # Index page
-    p Thank you for your supporting :)
-    p
-      a(href="https://www.buymeacoffee.com/edgardo" target="_blank")
-        img(src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;")
+  .container
+    section.main-panel
+      .top-reviews
+        include mixins/page-title.pug
+        +pageTitle("What guests are saying about homes in United States")
+        p.sub-text United States homes were <b>rated 4.8 out of 5 stars</b> with <b>30,500,000+ reviews</b>
+        .row
+          .review-block.col-md-6.col-lg-4
+            img(src="./assets/images/backgrounds/header.jpg" height = '222')
+            .rate rate... 
+            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+          .review-block.col-md-6.col-lg-4
+            img(src="./assets/images/backgrounds/header.jpg" height = '222')
+            .rate rate... 
+            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+          .review-block.col-md-6.col-lg-4
+            img(src="./assets/images/backgrounds/header.jpg" height = '222')
+            .rate rate... 
+            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+
+
+        //- p
+        //-   a(href="https://www.buymeacoffee.com/edgardo" target="_blank")
+        //-     img(src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;")

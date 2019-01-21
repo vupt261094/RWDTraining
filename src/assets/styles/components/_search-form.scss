@@ -1,0 +1,29 @@
+/* src/assets/styles/components/_search-form.scss  */
+#searchForm{
+    width: 1000px;
+    margin: 0 auto;
+    .search-form-content {
+        background: #ffffff;
+        border-radius: 4px;
+        width: 508px;
+        margin-bottom: 64px;
+        padding: 32px;
+        
+    }
+    h1{
+        color: $pageColor;
+        font-weight: 600;
+        font-size: convertFontSize(32px);
+    }
+    p{
+        font-size: convertFontSize(18px);
+    }
+    label{
+        font-size: convertFontSize(14px);
+        font-weight: 500;
+    }
+    .btn-search{
+        background-color: $color-button-primary-color;
+        color: #fff;
+    }
+}

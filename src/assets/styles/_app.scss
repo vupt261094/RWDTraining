@@ -10,10 +10,14 @@
 @import './utils/_mixins';
 @import './utils/_colors';
 @import './utils/_keyframes';
+@import './utils/_variable';
 
 /*
   Components
 */
+@import './components/_header';
+@import './components/_review-block';
+@import './components/_search-form';
 @import './components/_footer';
 @import './components/_button';
 @import './components/_link';
