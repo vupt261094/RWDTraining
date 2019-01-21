@@ -1,8 +1,46 @@
 /* src/assets/styles/components/_review-block.scss  */
 .review-block{
     margin-top: 25px;
-    img{
+    img.house-image{
         width: 100%;
         margin-bottom: 10px;
+        cursor: pointer;
     }
+    .rate{
+        font-size: 19px;
+        .checked {
+            color: $color-rating-primary-color;
+        }
+    }
+    .comment{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .reviewer-profile{
+        margin-top: 20px;
+        .avatar{
+            height: 48px;
+            width: 48px;
+            display: inline-block;
+            vertical-align: middle;
+            img.profile-image{
+                border-radius: 50%;
+                display: block;
+            }
+        }
+        
+        .profile-info{
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            .profile-name{
+                font-size: convertFontSize(16px);
+                font-weight: 500;
+            }
+        }
+        
+    }
+    
 }

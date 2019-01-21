@@ -17,18 +17,55 @@ block content
         +pageTitle("What guests are saying about homes in United States")
         p.sub-text United States homes were <b>rated 4.8 out of 5 stars</b> with <b>30,500,000+ reviews</b>
         .row
+          -var imgUrl = "./assets/images/backgrounds/header.jpg"
           .review-block.col-md-6.col-lg-4
-            img(src="./assets/images/backgrounds/header.jpg" height = '222')
-            .rate rate... 
+            img.house-image(src=imgUrl height = '222')
+            .rate
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
             .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+            .reviewer-profile
+              .avatar
+                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
+              .profile-info 
+                .profile-name Claire
+                .country United Kingdom
+
           .review-block.col-md-6.col-lg-4
-            img(src="./assets/images/backgrounds/header.jpg" height = '222')
-            .rate rate... 
-            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+            img.house-image(src=imgUrl height = '222')
+            .rate
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely co. It's fair to say that absolutely 
+            .reviewer-profile
+              .avatar
+                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
+              .profile-info 
+                .profile-name Claire
+                .country United Kingdom
+
+
           .review-block.col-md-6.col-lg-4
-            img(src="./assets/images/backgrounds/header.jpg" height = '222')
-            .rate rate... 
-            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
+            img.house-image(src=imgUrl height = '222')
+            .rate 
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely
+            .reviewer-profile
+              .avatar
+                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
+              .profile-info 
+                .profile-name Claire
+                .country United Kingdom
 
 
         //- p
