@@ -56,13 +56,19 @@
   top: 70px;
   color: #fff;
   text-shadow: 0 0px 0.0001em #000!important;
+  // @media screen and (min-width: 685px) {
+  //   top: 70px;
+  // }
   @include md{
     top: 170px;
   }
   h1{
-    font-size: convertFontSize(30px);
+    font-size: convertFontSize(24px);
     font-weight: 700;
     margin-bottom: 10px;
+    @media screen and (min-width: 685px) {
+      font-size: convertFontSize(30px);
+    }
     // @include md{
     //   font-size: convertFontSize(30px);
     // }

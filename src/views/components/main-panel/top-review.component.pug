@@ -2,7 +2,7 @@
   include ../../mixins/page-title.pug
   +pageTitle("What guests are saying about homes in United States")
   p.sub-text United States homes were <b>rated 4.8 out of 5 stars</b> with <b>30,500,000+ reviews</b>
-  .row
+  .row.single-item
     -
       var reviews = [{
           id: 1,
@@ -37,3 +37,5 @@
     each item, index in reviews
         //- +pageTitle(item.imgUrl)
         +reviewBlock(item)
+//- script(type='text/javascript').
+//-     $(document).ready(function(){debugger;$('.single-item').slick({});});
