@@ -1,0 +1,29 @@
+/* src/assets/styles/components/_pros-block.scss  */
+.pros{
+    margin-top: 50px;
+    // padding: 0 20px;
+    .pros-block{
+        border-bottom: 1px solid rgb(235, 235, 235);
+        border-top: 1px solid rgb(235, 235, 235);
+        padding-top: 40px;
+        margin: 0 auto;
+        .pros-info{
+            margin-bottom: 20px;
+            i.icon{
+                display: block;
+                margin-bottom: 10px;
+                // height: 48px;
+                // width: 48px;
+                font-size: 40px; 
+                color: $color-rating-primary-color
+            }
+            label.pros-title{
+                font-weight: 500;
+                font-size: convertFontSize(15px);
+            }
+            
+        }
+    }
+    
+}
+

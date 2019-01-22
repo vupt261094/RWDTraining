@@ -1,0 +1,26 @@
+.pros
+  include ../../mixins/page-title.pug
+  +pageTitle("Traveling with Airbnb")
+  .pros-block
+    .row
+      -
+        var pros = [{
+        id: 1,
+        icon: "far fa-heart",
+        title: "24/7 customer support",
+        description: "Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day."
+        },{
+        id: 2,
+        icon: "fas fa-home",
+        title: "Global hospitality standards",
+        description: "Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb."
+        },{
+        id: 3,
+        icon: "fas fa-user-check",
+        title: "5-star hosts",
+        description: "From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality."
+        }]
+      include ../../mixins/pros-block.pug
+      if pros
+      each item, index in pros
+          +prosBlock(item)

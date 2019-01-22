@@ -1,0 +1,41 @@
+.suggestion-block
+  include ../../mixins/page-title.pug
+  +pageTitle("Just booked in United States")
+
+  -
+    var suggestions = [{
+        id: 1,
+        imgUrl: "./assets/images/backgrounds/header.jpg",
+        description: "Free Cancellation somthing somthing somthing",
+        price: "₫6,798,159",
+        ratings: 310
+      },{
+        id: 2,
+        imgUrl: "./assets/images/backgrounds/header.jpg",
+        description: "Free Cancellation somthing somthing somthing",
+        price: "₫3,016,159",
+        ratings: 560
+      },{
+        id: 3,
+        imgUrl: "./assets/images/backgrounds/header.jpg",
+        description: "Free Cancellation somthing somthing somthing",
+        price: "₫8,578,159",
+        ratings: 720
+      },{
+        id: 4,
+        imgUrl: "./assets/images/backgrounds/header.jpg",
+        description: "Free Cancellation somthing somthing somthing",
+        price: "₫10,578,159",
+        ratings: 200
+      }]
+    
+  .row 
+    include ../../mixins/suggestion-block.pug
+    - var houseNums = 22000
+    if suggestions
+      each item, index in suggestions
+        //- +pageTitle(item.imgUrl)
+        +suggestionBlock(item)
+    .show-more.col-sm
+      a(href="")=`Show all (${houseNums}+)`
+      span=` >`

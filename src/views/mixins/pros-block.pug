@@ -1,0 +1,7 @@
+mixin prosBlock(pros)
+  .pros-info.col-md-6.col-lg-4
+    //- img.icon(src="./assets/images/backgrounds/header.jpg", alt="Avatar", width="48px", height="48px")
+    //- <i class="far fa-heart icon"></i>
+    i(class=`${pros.icon} icon`)
+    label.pros-title=pros.title
+    p.pros-description=pros.description

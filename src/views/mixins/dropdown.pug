@@ -1,0 +1,5 @@
+//- src/views/mixins/dropdown.pug
+mixin listDrodown(id, class, ...items)
+  select(id=id, class=class)
+    each item in items
+      option(value=item)= item

@@ -1,4 +1,61 @@
-//- src/views/components/footer.pug
+footer.page-footer.font-small.blue.pt-4.d-sm-none.d-md-block
+  //- Footer Links
+  .container.text-center.text-md-left
+    //- Grid row
+    .row.footer-content
+      //- Grid column
+      hr.clearfix.w-100.d-md-none.pb-3
+      //- Grid column
+      .col-md-3.mb-md-0.mb-3
+        //- Links
+        h5.title.mb-3 Airbnb
+        - var airbnbCategories = ["Careers", "Press", "Policies", "Help", "Diversity & Belonging"]
+        ul.list-unstyled.category
+          each item in airbnbCategories
+            li
+              a(href='#!')= item
+      //- Grid column
+      //- Grid column
+      .col-md-3.mb-md-0.mb-3
+        //- Links
+        h5.title.mb-3 Discover
+        - var airbnbCategories = ["Trust & Safety", "Travel Credit", "Gift Cards", "Airbnb Citizen", "Business Travel", "Guidebooks", "Airbnbmag", "Events"]
+        ul.list-unstyled.category
+          each item in airbnbCategories
+            li
+              a(href='#!')= item
+      .col-md-3.mb-md-0.mb-3
+        //- Links
+        h5.title.mb-3 Hosting
+        - var airbnbCategories = ["Why Host", "Hospitality", "Responsible Hosting", "Community Center", "Host an Experience", "Open Homes"]
+        ul.list-unstyled.category
+          each item in airbnbCategories
+            li
+              a(href='#!')= item
+      .col-md-3.mb-md-0.mb-3
+        //- Links
+        h5.title.mb-3 
+          span.social-network-share
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        - var airbnbCategories = ["Terms", "Privacy", "Site Map"]
+        ul.list-unstyled.category
+          each item in airbnbCategories
+            li
+              a(href='#!')= item
+      //- Grid column
+      //- Grid row
+      //- Footer Links
 
-footer.footer
-  p Built by #[a(href='https://edgardorl.com') Edgardo Ramírez León]
+    //- Copyright
+    .footer-copyright.text-left.py-3.col-md-6
+      | © Airbnb, Inc.
+    .col-md-6.text-right(style='display: inline-block;')
+      button.btn.btn-default(style="margin-right: 15px") English
+      
+      button.btn.btn-default VND
+
+    //- Copyright
+  
+//- Footer

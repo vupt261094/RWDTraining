@@ -1,29 +1,42 @@
 /* src/assets/styles/components/_search-form.scss  */
+$header-break: 992px;
+
 #searchForm{
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    @include xl {         // 1200px window width and more
+        width: 60%;
+    }
     .search-form-content {
         background: #ffffff;
         border-radius: 4px;
-        width: 508px;
+        width: 100%;
         margin-bottom: 64px;
         padding: 32px;
-        
+        @include xl {         // 1200px window width and more
+            width: 510px;
+        }
+        // @include sm{
+        //     width: 100%!important;
+        // }
     }
     h1{
         color: $pageColor;
-        font-weight: 600;
-        font-size: convertFontSize(32px);
+        font-weight: 700;
+        font-size: convertFontSize(25px);
     }
     p{
-        font-size: convertFontSize(18px);
+        font-size: convertFontSize(15px);
     }
     label{
-        font-size: convertFontSize(14px);
-        font-weight: 500;
+        font-size: convertFontSize(13px);
+        font-weight: 600;
     }
     .btn-search{
-        background-color: $color-button-primary-color;
+        background-color: $color-button-search-color;
         color: #fff;
+        padding: 15px 0;
+        font-weight: 600;
+        font-size: convertFontSize(16px);
     }
 }

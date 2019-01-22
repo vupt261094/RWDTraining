@@ -1,0 +1,24 @@
+//- src/views/mixins/dropdown.pug
+mixin suggestionBlock(informations)
+  .suggestion-block.col-md-6.col-lg-6.col-xl-3
+    img.house-image(src=informations.imgUrl)
+    .house-category
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">ENTIRE HOUSE</a></li>
+        <li class="breadcrumb-item"><a href="#">JOSHUA TREE</a></li>
+      </ol>
+    .house-title
+      h4 <b>The Joshua Tree House</b>
+    .description= `${informations.price} per night . ${informations.description}`
+    .rate
+      span.rating-icon
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+      if informations.ratings > 300
+        span.rating-nums=`${informations.ratings} • Superhost`
+      else
+        span.rating-nums=`${informations.ratings}`
+          //- var imgUrl = "./assets/images/backgrounds/header.jpg"

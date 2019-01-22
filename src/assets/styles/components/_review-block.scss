@@ -1,10 +1,15 @@
 /* src/assets/styles/components/_review-block.scss  */
 .review-block{
     margin-top: 25px;
+    margin-bottom: 20px;
     img.house-image{
         width: 100%;
         margin-bottom: 10px;
         cursor: pointer;
+        height: 370px;
+        @include xl {         // 1200px window width and more
+            height: 222px;
+        }
     }
     .rate{
         font-size: 19px;
@@ -17,6 +22,8 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        min-height: 60px;
+        margin-top: 10px;
     }
     .reviewer-profile{
         margin-top: 20px;

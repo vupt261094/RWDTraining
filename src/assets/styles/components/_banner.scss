@@ -1,0 +1,30 @@
+.banner{
+    h1{
+        &.page__title{
+            margin-bottom: 0.5rem;
+        }
+        
+    }
+    p{
+        &.sub-text{
+           margin-bottom: 1.5rem; 
+        }
+    }
+    button{
+        &.btn-primary{
+            background-color: $color-button-info-color;
+            font-size: 19px;
+            font-weight: 600;
+            padding: 0.7rem;
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+            border-color: transparent;
+        }
+        &:active{
+            background-color: rgb(0, 95, 99)!important;
+        }
+        &:hover{
+            background-color: $color-button-info-color;
+        }
+    }
+}

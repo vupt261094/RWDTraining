@@ -7,6 +7,8 @@
 html,
 body {
   height: 100%;
+  flex-direction: column !important;
+  align-items: normal !important;
 }
 body {
   @include isFlex(center, center);
@@ -33,4 +35,17 @@ ul {
 }
 li {
   list-style: none;
+}
+.form-control{
+  padding: 0.8em 0.75em;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 2px);
+}
+
+.container{
+  max-width: 100%;
+  @include xl {         // 1200px window width and more
+    max-width: 1140px;;
+}
 }

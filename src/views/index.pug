@@ -12,62 +12,21 @@ block content
   //- Desktop page
   .container
     section.main-panel
-      .top-reviews
-        include mixins/page-title.pug
-        +pageTitle("What guests are saying about homes in United States")
-        p.sub-text United States homes were <b>rated 4.8 out of 5 stars</b> with <b>30,500,000+ reviews</b>
-        .row
-          -var imgUrl = "./assets/images/backgrounds/header.jpg"
-          .review-block.col-md-6.col-lg-4
-            img.house-image(src=imgUrl height = '222')
-            .rate
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star
-            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely 
-            .reviewer-profile
-              .avatar
-                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
-              .profile-info 
-                .profile-name Claire
-                .country United Kingdom
+      //- TOP REVIEWS BLOCK
+      include components/main-panel/top-review.component.pug
+      //- END TOP REVIEWS BLOCK
 
-          .review-block.col-md-6.col-lg-4
-            img.house-image(src=imgUrl height = '222')
-            .rate
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely co. It's fair to say that absolutely 
-            .reviewer-profile
-              .avatar
-                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
-              .profile-info 
-                .profile-name Claire
-                .country United Kingdom
+      //- PROS BLOCK     
+      include components/main-panel/pros.component.pug
+      //- END PROS BLOCK 
 
+      //- SUGGESTION INFO BLOCK 
+      include components/main-panel/suggestion.component.pug
+            
+      //- END SUGGESTION INFO BLOCK
 
-          .review-block.col-md-6.col-lg-4
-            img.house-image(src=imgUrl height = '222')
-            .rate 
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-              span.fa.fa-star.checked
-            .comment We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely We were welcomed by Rosa and her daughter on our arrival after a long drive from San Francisco. It's fair to say that absolutely
-            .reviewer-profile
-              .avatar
-                img.profile-image(src=imgUrl, alt="Avatar", width="48px", height="48px")
-              .profile-info 
-                .profile-name Claire
-                .country United Kingdom
+      //- BANNER BLOCK 
+      include components/main-panel/banner.component.pug
+      //- END BANNER BLOCK 
 
-
-        //- p
-        //-   a(href="https://www.buymeacoffee.com/edgardo" target="_blank")
-        //-     img(src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;")
+      
