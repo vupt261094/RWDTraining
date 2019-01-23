@@ -32,10 +32,10 @@
           country: "United States"
           }
       }]
-    include ../../mixins/review-block.pug
+    include ../../mixins/main-panel/review-block.pug
     if reviews
     each item, index in reviews
         //- +pageTitle(item.imgUrl)
         +reviewBlock(item)
-//- script(type='text/javascript').
+
 //-     $(document).ready(function(){debugger;$('.single-item').slick({});});

@@ -1,0 +1,20 @@
+//- src/views/mixins/dropdown.pug
+mixin reviewBlock(informations)
+  .review-block.col-sm-12.col-md-12.col-lg-12.col-xl-4
+    div.house-image(style=`background-image: url("${informations.imgUrl}");`)
+    //img.house-image.img-fluid(src=informations.imgUrl)
+    .rate
+      span.fa.fa-star.checked
+      span.fa.fa-star.checked
+      span.fa.fa-star.checked
+      span.fa.fa-star.checked
+      span.fa.fa-star
+    .comment= informations.comment
+    .reviewer-profile
+      .avatar
+        img.profile-image(src=informations.profile.avatar, alt="Avatar", width="48px", height="48px")
+      .profile-info 
+        .profile-name=informations.profile.name
+        .country=informations.profile.country
+
+          //- var imgUrl = "./assets/images/backgrounds/header.jpg"

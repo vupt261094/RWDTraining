@@ -14,14 +14,17 @@
 
 
 .main-panel{
-  padding-top: 50px;
+  padding-top: 0px;
+  @include xl {         // 1200px window width and more
+    padding-top: 50px;
+  }
   .page__title {
     // margin: 0;
-    font-size: convertFontSize(24px);
+    font-size: 24px;
     font-weight: 600;
   }
   .sub-text{
-    font-size: convertFontSize(16px);
+    font-size: 16px;
   }
 }
 

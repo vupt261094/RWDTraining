@@ -29,13 +29,13 @@
         ratings: 200
       }]
     
-  .row 
-    include ../../mixins/suggestion-block.pug
+  .row.single-item-1
+    include ../../mixins/main-panel/suggestion-block.pug
     - var houseNums = 22000
     if suggestions
       each item, index in suggestions
         //- +pageTitle(item.imgUrl)
         +suggestionBlock(item)
-    .show-more.col-sm
-      a(href="")=`Show all (${houseNums}+)`
-      span=` >`
+  .show-more.col-sm
+    a(href="")=`Show all (${houseNums}+)`
+    span=` >`

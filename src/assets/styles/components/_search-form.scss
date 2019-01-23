@@ -11,10 +11,11 @@ $header-break: 992px;
         background: #ffffff;
         border-radius: 4px;
         width: 100%;
-        margin-bottom: 64px;
+        margin-bottom: 0px;
         padding: 32px;
         @include xl {         // 1200px window width and more
             width: 510px;
+            margin-bottom: 64px;
         }
         // @include sm{
         //     width: 100%!important;
@@ -38,5 +39,8 @@ $header-break: 992px;
         padding: 15px 0;
         font-weight: 600;
         font-size: convertFontSize(16px);
+    }
+    .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons{
+        top: 15px!important;
     }
 }
